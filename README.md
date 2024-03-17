@@ -1,6 +1,22 @@
 ## https://zenn.dev/gakin/scraps/4cc16e7761d1ef   
 
 
+
+① server/index.ts 打开这个文件 设置端口号
+// 这里需要设置端口号
+const PORT = 6000;
+
+这里也需要跟Dockerfile 文件中的端口号，保持一致
+
+② 　执行
+docker-compose up -d 
+
+② 
+③
+④
+
+
+
 From Node:12-alpine3.12
 FROM node:18-buster-slim  Debian
 FROM node:18-buster       ubuntu
