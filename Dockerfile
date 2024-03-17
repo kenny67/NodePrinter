@@ -1,12 +1,16 @@
 FROM node:18-buster-slim
 
-RUN apt-get -y update&&apt-get -y upgrade\
-    && apt-get install -y inetutils-ping curl vim \
+RUN apt-get -y update \
+    &&apt-get install -y inetutils-ping dnsutils curl vim
     
-RUN npm install -g npm@10.2.1 
-RUN npm install -g ts-node 
-RUN npm install typescript --save \
-    && npm install express --save  \
+#RUN npm install npm@10.2.1 
+RUN npm cache clean --force
+
+RUN npm install npm -g 
+
+RUN npm install ts-node -g
+RUN npm install typescript express -g
+#    && npm install express --save\
 
 
 # types@express  error
@@ -14,9 +18,9 @@ RUN npm install typescript --save \
 WORKDIR /app
 
 ENV NODE_ENV production
-ENV PORT 5000
+ENV PORT 6000
 
-EXPOSE 5000
+EXPOSE 6000
 
 #COPY package*.json ./
 #RUN npm install
