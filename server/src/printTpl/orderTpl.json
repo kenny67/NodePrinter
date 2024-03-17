@@ -1,0 +1,1 @@
+{"tpl":"<BR>--------------------------------<BR>    订单编号：${order_id} <BR>    订单时间：${order_time} <BR>    ${orderDetails} <BR> <BR>--------------------------------<BR>    订单总价：${payment_amount} <BR>"}

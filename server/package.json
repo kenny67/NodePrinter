@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "****MIT type and module is very IMPORTANT****",
+  "dependencies": {
+    "@types/express": "^4.17.20",
+    "@types/express-session": "^1.17.7",
+    "@types/node": "^20.8.9",
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "file-stream-rotator": "^1.0.0",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "printer-open-api": "^1.0.14",
+    "winston": "^3.11.0"
+  },
+  "scripts": {
+    "dev": "tsc ./src/index.ts",
+    "dev:help": "tsc用于node编译，OK",
+    "dev2": "ts-node ./src/index.ts",
+    "dev2:help": "ts-node直接运行环境，测试可以使用，OK",
+    "dev1": "ts-node-dev --respawn src/index.ts",
+    "start": "node dist/index.js",
+    "start:help": "需要用tsc编译成js文件，再用node运行程序dist/index.js",
+    "dev:local": "ts-node ./src/index.ts",
+    "ts-node": "ts-node",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "simple-oauth2": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  node_dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    
+    container_name: node_dev
+    tty: true
+    volumes:
+      - .:/app
+    
+    ports:
+      - 5000:5000
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
+    external: true 
+
+#   entrypoint: >
+#     /bin/sh -c "sleep 86400"

@@ -1,0 +1,1 @@
+{"tpl":"--------------------------------<BR>    <L>${product_name}   单价：${general_price}  数量: ${buy_num}   </L><BR>    <L>单品总价：${product_total}</L><BR>"}
